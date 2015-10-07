@@ -28,7 +28,7 @@ production:
   adapter: postgresql
   host: localhost
   encoding: unicode
-  database: rails-identity-server
+  database: auth
   pool: 5
   username:
   password:
