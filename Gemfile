@@ -37,7 +37,8 @@ gem 'rolify'
 gem 'rails_12factor'
 
 group :production do
-gem 'pg'
+  gem 'pg'
+  gem 'unicorn'
 end
 
 group :development, :test do
