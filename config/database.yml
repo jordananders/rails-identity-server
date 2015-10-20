@@ -28,6 +28,7 @@ production:
   adapter: postgresql
   host: localhost
   encoding: unicode
+  template: template0
   database: auth
   pool: 5
   username: auth
