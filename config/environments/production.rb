@@ -19,7 +19,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   #config.action_mailer.raise_delivery_errors = false
 
-  config.action_mailer.default_url_options = { :host => ENV['ACTION_MAILER_URL'] }
+  config.action_mailer.default_url_options = { :host => ENV['ACTION_MAILER_URL'], :protocol => 'https' }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
