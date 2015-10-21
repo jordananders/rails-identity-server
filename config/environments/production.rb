@@ -23,7 +23,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
           :address => "172.17.42.1",
           :port    => 25,
-          :domain  => ENV['ACTION_MAILER_DOMAIN']
+          :domain  => ENV['ACTION_MAILER_DOMAIN'],
+          :openssl_verify_mode => :none
       }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
