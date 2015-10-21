@@ -20,6 +20,11 @@ Rails.application.configure do
   #config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.default_url_options = { :host => ENV['ACTION_MAILER_URL'], :protocol => 'https' }
+  config.action_mailer.smtp_settings = {
+          :address => "172.17.42.1",
+          :port    => 25,
+          :domain  => ENV['ACTION_MAILER_DOMAIN']
+      }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
