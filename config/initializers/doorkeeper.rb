@@ -15,7 +15,6 @@ Doorkeeper.configure do
   end
 
   admin_authenticator do
-    #current_user && current_user.admin? || redirect_to(new_user_session_url)
     current_user && (current_user.has_role? :admin) || redirect_to(new_user_session_url)
   end
 
